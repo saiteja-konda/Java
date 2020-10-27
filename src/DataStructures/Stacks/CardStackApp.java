@@ -7,22 +7,16 @@ public class CardStackApp {
         CardStackApp app = new CardStackApp();
         app.stackCards();
         app.unstackCards();
-        //restack cards
         app.stackCards();
 
-        //how many cards are on the deck
         app.desckSize();
 
-        //do we have queen of hearts in the deck
         app.containsCard("Red Card");
 
-        //do we have a joker
         app.containsCard("Blue");
 
-        //go to the king of diamonds
         app.goToCard("Yellow Card");
 
-        //now how many cards are on the deck
         app.desckSize();
     }
 
@@ -34,7 +28,6 @@ public class CardStackApp {
     }
 
     private void unstackCards() {
-        //now pull the cards off the stack and print them
         while (stack.size() > 0) {
             System.out.println(stack.pop());
         }
